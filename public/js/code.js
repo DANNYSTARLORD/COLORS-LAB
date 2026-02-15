@@ -1,4 +1,4 @@
-const urlBase = '/api';
+const urlBase = '/COLORS-LAB';
 const extension = 'php';
 
 let userId = 0;
