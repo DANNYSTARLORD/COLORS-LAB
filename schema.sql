@@ -35,7 +35,7 @@ CREATE TABLE Contacts
 ) ENGINE=InnoDB;
 
 INSERT INTO Users (FirstName, LastName, Login, Password)
-VALUES ('Sam','Hill','SamH','Test');
+VALUES ('Sam','Hill','SamH','Test'); -- For test purpopses only, remove it after testing is done
 
 CREATE USER 'DANNY'@'%' IDENTIFIED BY 'WeLoveCOP4331';
 GRANT ALL PRIVILEGES ON COP4331.* TO 'DANNY'@'%';
