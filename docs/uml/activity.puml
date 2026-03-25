@@ -1,0 +1,16 @@
+@startuml
+start
+
+:User enters color;
+:Click "Add Color";
+
+:Send POST request to AddColor.php;
+
+:Backend processes request;
+
+:Receive response;
+
+:Display success message;
+
+stop
+@enduml
