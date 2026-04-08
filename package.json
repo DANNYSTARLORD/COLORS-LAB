@@ -1,0 +1,24 @@
+{
+  "name": "colors-lab",
+  "version": "1.0.0",
+  "description": "## Description This is a respository for a website that that allows users to login, where they can add any colors of their choice and later search for those colors.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint public/js/*.js && stylelint public/css/*.css && htmlhint public/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
+  },
+  "type": "module"
+}
