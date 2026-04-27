@@ -1,3 +1,4 @@
+import { jest } from "@jest/globals";
 global.fetch = jest.fn();
 
 function mockResponse(body, status = 200) {
@@ -95,7 +96,7 @@ describe("Login API", () => {
 
   test("successful login returns id, firstName, lastName", async () => {
     fetch.mockReturnValueOnce(
-      mockResponse({ id: 5, firstName: "John", lastName: "Doe" })
+      mockResponse({ id: 5, firstName: "John", lastName: "Doe" }),
     );
 
     const response = await fetch("/COLORS-LAB/Login.php", {
@@ -113,7 +114,7 @@ describe("Login API", () => {
 
   test("failed login returns id less than 1", async () => {
     fetch.mockReturnValueOnce(
-      mockResponse({ id: 0, firstName: "", lastName: "" })
+      mockResponse({ id: 0, firstName: "", lastName: "" }),
     );
 
     const response = await fetch("/COLORS-LAB/Login.php", {
