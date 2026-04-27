@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "lint": "eslint public/js/*.js && stylelint public/css/*.css && htmlhint public/*.html"
   },
   "keywords": [],
@@ -17,8 +17,14 @@
     "@eslint/js": "^10.0.1",
     "eslint": "^10.2.0",
     "htmlhint": "^1.9.2",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
     "stylelint": "^17.6.0",
     "stylelint-config-standard": "^40.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  }
 }
